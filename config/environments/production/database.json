@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "sqlite",
+        "host": "${process.env.DATABASE_HOST || 'ftp://f319751@ftp.d328811.cp.hostnet.nl'}",
+        "port": "${process.env.DATABASE_PORT || 21}",
+        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "username": "${process.env.DATABASE_USERNAME || 'f319751'}",
+        "password": "${process.env.DATABASE_PASSWORD || 'Fd6cfcab'}"
+      },
+      "options": {}
+    }
+  }
+}

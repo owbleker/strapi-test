@@ -1,0 +1,14 @@
+{
+  "host": "ftp://f319751@ftp.d328811.cp.hostnet.nl",
+  "port": "${process.env.PORT || 21}",
+  "production": true,
+  "proxy": {
+    "enabled": false
+  },
+  "cron": {
+    "enabled": false
+  },
+  "admin": {
+    "autoOpen": false
+  }
+}

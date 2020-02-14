@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "profile_picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "short_description": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 500
+    },
+    "long_description": {
+      "type": "richtext"
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "employees"
+    },
+    "categories": {
+      "via": "employees",
+      "collection": "category"
+    }
+  }
+}
